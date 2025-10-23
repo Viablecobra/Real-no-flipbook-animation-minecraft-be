@@ -13,3 +13,8 @@ libc = "0.2"
 [profile.release]
 lto = true
 strip = true
+
+[profile.githubci]
+inherits = "release"
+lto = true
+strip = true
